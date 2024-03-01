@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="https://kit.fontawesome.com/9514e3dbdb.js"
             crossorigin="anonymous"></script>
+
+        <script src="./assets/java/index.js" defer></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -36,6 +38,19 @@
         <!-- ----------------Font Awesome CDN Complete--------------------- -->
     </head>
     <body>
+
+        <div class="mobile" id="mobmenu">
+            <div class="hidemenu"><a id="xmark" onclick="hideMenu"><i
+                        class="fa-solid fa-xmark"></i></a></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
         <header>
             <nav>
                 <div class="logo">
@@ -50,18 +65,12 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul> -->
                 <div class="mobilemenu">
-                    <a><i class="fa-solid fa-bars"></i></a>
+                    <a id="hambar" onclick="showMenu"><i
+                            class="fa-solid fa-bars"></i></a>
+
                 </div>
             </nav>
-            <div class="mobile">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
+
         </header>
         <main>
 
@@ -71,7 +80,7 @@
                         <strong>Barber</strong> <br>Most Trusted One.</h1>
                     <p>"Where Style Meets Precision!"
                     </p>
-                    <a href="#">Book Our Services</a>
+                    <a href="#linkformhere">Book Our Services</a>
 
                 </div>
 
@@ -110,7 +119,7 @@
                             </p>
                         </div>
                         <div class="service-btn">
-                            <a href="#">Book Now</a>
+                            <a href="#linkformhere">Book Now</a>
                         </div>
                     </div>
                     <div class="service-box">
@@ -127,7 +136,7 @@
                             </p>
                         </div>
                         <div class="service-btn">
-                            <a href="#">Book Now</a>
+                            <a href="#linkformhere">Book Now</a>
                         </div>
                     </div>
                     <div class="service-box">
@@ -146,7 +155,7 @@
                             </p>
                         </div>
                         <div class="service-btn">
-                            <a href="#">Book Now</a>
+                            <a href="#linkformhere">Book Now</a>
                         </div>
                     </div>
                     <!-- ------------Services box-------------- -->
@@ -167,7 +176,8 @@
                         exceptional haircuts. We believe in creating connections
                         with our clients that go beyond the chair. <br> <br>
 
-                        Ready for a laid-back grooming experience? <a href> Book
+                        Ready for a laid-back grooming experience? <a
+                            href="#linkformhere"> Book
                             your
                             appointment now!</a> and discover why are the choice
                         for those who appreciate the art of looking good without
@@ -217,10 +227,10 @@
                     <div class="top-flex">
                         <div class="client-detail">
                             <div class="profile-pic">
-                                <img src="./assets/shivaram.png" alt>
+                                <img src="./assets/client/bzen.png" alt>
                             </div>
                             <div class="client-name">
-                                <h6>Shivaram Mahat</h6>
+                                <h6>Bzen Chuck's-Bijendra D Shrestha</h6>
                                 <p>15/10/2023</p>
                             </div>
                         </div>
@@ -242,9 +252,9 @@
                             style="color: #FFD43B;"></i>
                     </div>
                     <div class="client-msg">
-                        Top notch. Boys really take pride on their work. Been
-                        here twice, always an amazing experience. I'm now a
-                        forever customer. 👌👌
+                        Thank you lazy Barbers for the best experience highly
+                        appreciated and recommended…. Best barber shop at
+                        Granville 😆😆🙏
                     </div>
                 </div>
 
@@ -252,10 +262,10 @@
                     <div class="top-flex">
                         <div class="client-detail">
                             <div class="profile-pic">
-                                <img src="./assets/shivaram.png" alt>
+                                <img src="./assets/client/sudip.png" alt>
                             </div>
                             <div class="client-name">
-                                <h6>Sanjeev Basnet</h6>
+                                <h6>Sudip karki</h6>
                                 <p>15/10/2023</p>
                             </div>
                         </div>
@@ -277,9 +287,7 @@
                             style="color: #FFD43B;"></i>
                     </div>
                     <div class="client-msg">
-                        Very understanding,affordable.
-                        Just got haircut from them.Loved it 🔥
-                        Service: Fade cut
+                        Highly recommend Nepali barber on town.
                     </div>
                 </div>
 
@@ -287,10 +295,10 @@
                     <div class="top-flex">
                         <div class="client-detail">
                             <div class="profile-pic">
-                                <img src="./assets/shivaram.png" alt>
+                                <img src="./assets/client/subrat.png" alt>
                             </div>
                             <div class="client-name">
-                                <h6>Shivaram Mahat</h6>
+                                <h6>Subrat Sharma</h6>
                                 <p>15/10/2023</p>
                             </div>
                         </div>
@@ -312,9 +320,10 @@
                             style="color: #FFD43B;"></i>
                     </div>
                     <div class="client-msg">
-                        Top notch. Boys really take pride on their work. Been
-                        here twice, always an amazing experience. I'm now a
-                        forever customer. 👌👌
+                        Nice cutting, reasonable price, friendly staff and close
+                        to granville station. Highly recommended this amazing
+                        nepalese barber shop and personally felt fresh and
+                        clean💈💇
                     </div>
                 </div>
 
@@ -322,10 +331,10 @@
                     <div class="top-flex">
                         <div class="client-detail">
                             <div class="profile-pic">
-                                <img src="./assets/shivaram.png" alt>
+                                <img src="./assets/client/bijeta.png" alt>
                             </div>
                             <div class="client-name">
-                                <h6>Shivaram Mahat</h6>
+                                <h6>Bijeta Budathoki</h6>
                                 <p>15/10/2023</p>
                             </div>
                         </div>
@@ -347,9 +356,10 @@
                             style="color: #FFD43B;"></i>
                     </div>
                     <div class="client-msg">
-                        Top notch. Boys really take pride on their work. Been
-                        here twice, always an amazing experience. I'm now a
-                        forever customer. 👌👌
+                        I took my father at Lazy Barber last week, he was very
+                        much happy with their customer service and very
+                        satisfied with the hair cut. Will definitely take him
+                        back again before he returns back to Nepal.
                     </div>
                 </div>
 
@@ -390,7 +400,7 @@
                 <!-- ----------------------Client Review Box------------------------- -->
             </div>
             <!-- ----------------Contact Us------------------ -->
-            <div class="bookwithus">
+            <div class="bookwithus" id="linkformhere">
                 <h2><span>Are You Ready?</span> <br>Book Appointment</h2>
                 <div class="bookform">
                     <form action>
@@ -398,8 +408,11 @@
                         <input type="text" placeholder="Name" required>
                         <input type="email" placeholder="Email" required>
                         <input type="tel" placeholder="0400 XXX XXX" required>
-                        <textarea name="book" id="book" required placeholder="Please enter the time and date you want to book!"></textarea>
-                        <div class="form-button"><input type="submit" class="sub"> <input type="reset" value="Clear" class="sub"></div>
+                        <textarea name="book" id="book" required
+                            placeholder="Please enter the time and date you want to book!"></textarea>
+                        <div class="form-button"><input type="submit"
+                                class="sub"> <input type="reset" value="Clear"
+                                class="sub"></div>
                     </form>
                 </div>
             </div>

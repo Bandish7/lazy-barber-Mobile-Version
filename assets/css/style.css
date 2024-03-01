@@ -10,6 +10,9 @@
     --font: 'Poppins', Arial,Helvetica;
     --mobile-width:600px;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -137,23 +140,63 @@ border-radius: 8px;
     text-decoration: none;
     font-size: 3rem;
     color: white;
-    /* display: none; */
+    cursor: pointer;
+}
+.mobilemenu a:hover{
+    color: var(--golden);
+}
+#xmark{
+display: none;
+text-decoration: none;
+font-size: 3rem;
+color: white;
+cursor: pointer;
+z-index: 999;
 }
 .mobile{
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 2rem 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+   padding-right: 2rem;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     max-width: 300px;
     width: 100%;
+    z-index: 999;
+    text-align: right;
     display: none;
+    animation-name: mobmenuslide;
+    animation-duration: 1s;
+
+  
 
 }
+
+
+@keyframes mobmenuslide {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes menudelay{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 .mobile ul{
     list-style: none;
     text-align: center; 
+    padding-top: 50px;
+    animation-name: menudelay;
+    animation-duration: 1s;
+    animation-delay: 1s;
     
 } 
 .mobile ul li{
@@ -161,7 +204,13 @@ border-radius: 8px;
 }
 .mobile ul a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 20px;
+}
+.mobile ul a:hover{
+    color: var(--golden);
+    text-decoration: underline;
 }
     
 
@@ -457,9 +506,7 @@ textarea{
     font-weight: 500;
     resize: none;
 }
-form #book ::placeholder{
-    color: var(--white);
-}
+
 .form-button {
     display: flex;
     align-items: center;
